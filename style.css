@@ -1,0 +1,145 @@
+body{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*font-family: 'Poppins', sans-serif;*/
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 500px;
+    margin: auto;
+    /*background: black;*/
+}
+.img_container{
+    position: relative;
+    text-align: bottom-left;
+}
+.img{
+    display: block;
+    width: 1000px;
+    height: 500px; 
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    object-fit: cover;
+    object-position: 100% -100px;
+}
+.description{
+    position: absolute;
+    
+    width: 960px;
+    height: auto;
+    left: 20px;
+    
+    bottom: 0px;
+    padding: 20px;
+    
+    background: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+}
+.description:hover{
+    background: rgba(0, 0, 0, 0.747);
+    color: rgb(255, 255, 255);
+}
+
+button{
+    border: 0;
+    outline: none;
+    background: #EAEAEA;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+button:hover{
+    background: #F4F4F4;
+    cursor: pointer;
+}
+button:active{
+    background: #FFFFFF;
+}
+.left{
+    font-size: 20px;
+    color: grey;
+}
+.right{
+    font-size: 20px;
+    color: grey;
+}
+
+.thumbnail{
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    left: 25%;
+    bottom: -20%;
+    padding: 20px;
+
+    width: max-content;
+    height: min-content;
+
+    /*background: rgba(255, 187, 0, 0.555);*/
+}
+.item{
+    position: relative;
+    width: 80px;
+    height: 100px;
+    margin: 0px 5px;
+    /*background: grey;*/
+}
+
+.t_img{
+    display: block;
+    width: 80px;
+    height: 80px; 
+    object-fit: cover;
+    object-position: 100%   0px;
+}
+.t_img:hover{
+    cursor: pointer;
+}
+
+.p_title{
+    display: block;
+    position: relative;
+
+    white-space: nowrap;
+    width: fit-content;
+    height: fit-content;
+
+    padding: 5px;
+    top: -5px;
+    bottom: 5px;
+
+    align-content: center;
+
+    background: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    
+    border-radius: 5px;
+    text-align: center;
+}
+.item:hover .p_title::before{
+    content: '';
+	position: absolute;
+	width: 0;
+    height: 0;
+
+    border-top: 10px solid black;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+
+    margin: 20px 0 0;
+}
+
+.item:hover .p_title{
+    display: block;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
