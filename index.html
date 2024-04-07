@@ -9,45 +9,38 @@
     <link rel="stylesheet" href="script.js">
 </head>
 <body>
-    <div class="container" id="cont">
-        <button class="left" id="lhs">&larr;</button>
-        <div class="img_container">
-            <img class="img" id="im">
-            <div class="description" id="des">
-                <h3 style = "font-family: 'Poppins', sans-serif; text-transform: uppercase;" id="title"></h3>
-                <p style = "font-family: 'Poppins', sans-serif;" id="sub_text">Sub-text</p>
+    <header>
+        <h1>Image viewer</h1>
+    </header>
+    <main>
+        <section class="upper-section">
+            <p>This web app uses HTML, CSS, and JavaScript.</p>
+        </section>
+        <section class="middle-section">
+            <div class="image-container">
+                <div class="button-container">
+                    <button class="arrow-left" id="al">&#129120;</button>
+                    <img class="main-image" id="main-image">
+                    <button class="arrow-right" id="ar">&#129122;</button>
+                </div>
             </div>
-        </div>
-        <button class="right" id="rhs">&rarr;</button>
-    </div>
-    <div class="thumbnail" id="thumb">
-        <div class="item" id="nr_1">
-            <div class="p_title" id="p_title_1"></div>
-            <img class="t_img" id="im1">
-        </div>
-        <div class="item" id="nr_2">
-            <div class="p_title" id="p_title_2"></div>
-            <img class="t_img" id="im2">
-        </div>
-        <div class="item" id="nr_3">
-            <div class="p_title" id="p_title_3"></div>
-            <img class="t_img" id="im3">
-        </div>
-        <div class="item" id="nr_4">
-            <div class="p_title" id="p_title_4"></div>
-            <img class="t_img" id="im4">
-        </div>
-        <div class="item" id="nr_5">
-            <div class="p_title" id="p_title_5"></div>
-            <img class="t_img" id="im5">
-        </div>
-        <div class="item" id="nr_6">
-            <div class="p_title" id="p_title_6"></div>
-            <img class="t_img" id="im6">
-        </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+            <div class="description-container">
+                <h2 id="title"></h2>
+                <p id="description">Image description</p>
+            </div>
+        </section>
+        <section class="lower-section">
+            <img class="thumbnail-image" id="th-image-1">
+            <img class="thumbnail-image" id="th-image-2">
+            <img class="thumbnail-image" id="th-image-3">
+            <img class="thumbnail-image" id="th-image-4">
+            <img class="thumbnail-image" id="th-image-5">
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        Peter Kenesei (2024)
+    </footer>
 </body>
 </html>

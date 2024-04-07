@@ -1,119 +1,62 @@
-//Keeping description on the image
-/*
-$('#im').on('click', () =>{
-    $('#des').css("background", "rgba(0, 0, 0, 0)")
-    $('#des').css("color", "rgba(0, 0, 0, 0)")
-    console.log("Click IMG")
-});
-
-$('#des').on('click', () =>{
-    $('#des').css("background", "rgba(0, 0, 0, 0.747)")
-    $('#des').css("color", "rgb(255, 255, 255)")
-    console.log("Click DES")
-});*/
-
-//Storing images
-let first = {
-    photo: 'images/4.jpg',
-    title: 'Edges',
-    description: 'This is a minimalist architecture-themed photo.'
-};
-let second = {
-    photo: 'images/5.jpg',
-    title: 'Palms in sunset',
-    description: 'We can see three palm trees here.'
-};
-let third = {
-    photo: 'images/13.jpg',
-    title: 'Field at night',
-    description: 'This is a rather dark picture, with very few light in the distance, but just enough to notice the grass.'
-};
-let fourth = {
-    photo: 'images/14.jpg',
-    title: 'Mountain under stars',
-    description: 'On this image we can see a mountain full of lights but we can also see the stars.'
-};
-let fifth = {
-    photo: 'images/16.jpg',
-    title: 'Sihlouette of palms',
-    description: 'This image was taken early in the evening. You can see the sihlouette of the trees that are probably palm trees.'
-};
-let sixth = {
-    photo: 'images/20.jpg',
-    title: 'Warm cloud',
-    description: "I took this picture a few days ago. Altough it's a dark picture, I took it at about 4 pm."
-};
-
-//Moving between images
+// Images
+const path = './assets/images.json';
 let currentPicture = 0;
-let pictureArray = [first, second, third, fourth, fifth, sixth];
-$('#lhs').on('click', () => {
-    if(currentPicture >= 0){currentPicture--;}
-    for(let i = 0; i < 6; i++){
-        if(currentPicture === i){
-            $('#im').attr('src', pictureArray[currentPicture].photo);
-            $('#title').text(pictureArray[currentPicture].title);
-            $('#sub_text').text(pictureArray[currentPicture].description);
-        }
-    }
-});
-$('#rhs').on('click', () => {
-    if(currentPicture < 6){currentPicture++;}
-    for(let i = 0; i < 6; i++){
-        if(currentPicture === i){
-            $('#im').attr('src', pictureArray[currentPicture].photo);
-            $('#title').text(pictureArray[currentPicture].title);
-            $('#sub_text').text(pictureArray[currentPicture].description);
-        }
-    }
-});
+let imageArray = [];
 
-//Loading first image, when opening the page
-let loadPicture = (photoNumber) => {
-    $('#im').attr('src', pictureArray[photoNumber].photo);
-    $('#title').text(pictureArray[photoNumber].title);
-    $('#sub_text').text(pictureArray[photoNumber].description);
+function loadPicture(index) {
+    $('#main-image').attr('src', imageArray[index].image);
+    $('#title').text(imageArray[index].title);
+    $('#description').text(imageArray[index].description);
 };
 
-loadPicture(currentPicture);
+function imageArrayInit() {
+    fetch(path)
+    .then((response) => { return response.json(); })
+    .then((data) => {
+        imageArray = data;
 
-//Thumbnails
-$('#nr_1').on('click', () => {
-    currentPicture = 0;
-    loadPicture(currentPicture);
-    $('#nr_1').css('border', '3px')
-});
-$('#nr_2').on('click', () => {
-    currentPicture = 1;
-    loadPicture(currentPicture);
-});
-$('#nr_3').on('click', () => {
-    currentPicture = 2;
-    loadPicture(currentPicture);
-});
-$('#nr_4').on('click', () => {
-    currentPicture = 3;
-    loadPicture(currentPicture);
-});
-$('#nr_5').on('click', () => {
-    currentPicture = 4;
-    loadPicture(currentPicture);
-});
-$('#nr_6').on('click', () => {
-    currentPicture = 5;
-    loadPicture(currentPicture);
+        loadPicture(currentPicture);
+
+        $('#th-image-1').attr('src', imageArray[0].image);
+        $('#th-image-2').attr('src', imageArray[1].image);
+        $('#th-image-3').attr('src', imageArray[2].image);
+        $('#th-image-4').attr('src', imageArray[3].image);
+        $('#th-image-5').attr('src', imageArray[4].image);
+
+    })
+    .catch((error) => { console.error("There was a problem with the fetch operation: ", error); });
+};
+imageArrayInit();
+
+// Left Arrow
+$('#al').on('click', () => {
+    if(currentPicture > 0) {currentPicture--;}
+    else if(currentPicture === 0) {currentPicture = imageArray.length-1;}
+    for(let i = 0; i < imageArray.length; i++) {
+        if(currentPicture === i){
+            $('#main-image').attr('src', imageArray[currentPicture].image);
+            $('#title').text(imageArray[currentPicture].title);
+            $('#description').text(imageArray[currentPicture].description);
+        }
+    }
 });
 
-$('#im1').attr('src', 'thumbnails/t_4.jpg');
-$('#im2').attr('src', 'thumbnails/t_5.jpg');
-$('#im3').attr('src', 'thumbnails/t_13.jpg');
-$('#im4').attr('src', 'thumbnails/t_14.jpg');
-$('#im5').attr('src', 'thumbnails/t_16.jpg');
-$('#im6').attr('src', 'thumbnails/t_20.jpg');
+// Right Arrow
+$('#ar').on('click', () => {
+    if(currentPicture < imageArray.length) {currentPicture++;}
+    else if(currentPicture === imageArray.length) {currentPicture = 0;}
+    for(let i = 0; i < imageArray.length; i++) {
+        if(currentPicture === i){
+            $('#main-image').attr('src', imageArray[currentPicture].image);
+            $('#title').text(imageArray[currentPicture].title);
+            $('#description').text(imageArray[currentPicture].description);
+        }
+    }
+});
 
-$('#p_title_1').text(first.title);
-$('#p_title_2').text(second.title);
-$('#p_title_3').text(third.title);
-$('#p_title_4').text(fourth.title);
-$('#p_title_5').text(fifth.title);
-$('#p_title_6').text(sixth.title);
+// Thumbnails
+$('#th-image-1').on('click', () => { currentPicture = 0; loadPicture(currentPicture); });
+$('#th-image-2').on('click', () => { currentPicture = 1; loadPicture(currentPicture); });
+$('#th-image-3').on('click', () => { currentPicture = 2; loadPicture(currentPicture); });
+$('#th-image-4').on('click', () => { currentPicture = 3; loadPicture(currentPicture); });
+$('#th-image-5').on('click', () => { currentPicture = 4; loadPicture(currentPicture); });
