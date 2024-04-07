@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "image": "./assets/4.jpg",
+        "title": "Edges",
+        "description": "A minimalistic photo of a building."
+    },
+    {
+        "id": "2",
+        "image": "./assets/5.jpg",
+        "title": "Palms in the sunset",
+        "description": "A minimalistic photo of three palms in the nocturnal hours."
+    },
+    {
+        "id": "3",
+        "image": "./assets/13.jpg",
+        "title": "Field at night",
+        "description": "An empy field photographed at night."
+    },
+    {
+        "id": "4",
+        "image": "./assets/14.jpg",
+        "title": "Distant mountain",
+        "description": "A distant mountain in the night."
+    },
+    {
+        "id": "5",
+        "image": "./assets/16.jpg",
+        "title": "Silhouette of palms",
+        "description": "A photo of palm trees taken either in the afternoon or early in the morning."
+    }
+]
