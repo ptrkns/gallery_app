@@ -3,13 +3,13 @@
         "image": "./assets/img1.jpg",
         "title": "Frozen Field",
         "artist": "Anthony Da Cruz",
-        "description": "A snowy sunset in the Alps",
+        "description": "A snowy sunset in the Alps.",
         "camera": "NIKON D5500",
         "lens": "50",
-        "frame": "8",
-        "ISO": "640",
+        "fstop": "8",
+        "iso": "640",
         "shutter": "80",
-        "link": "unsplash.com/photos/landscape-1c33ba-uh_8"
+        "link": "https://unsplash.com/photos/landscape-1c33ba-uh_8"
     },
     {
         "image": "./assets/img2.jpg",
@@ -18,10 +18,10 @@
         "description": "The Brooklyn Bridge photographed in the Dumbo district.",
         "camera": "Canon EOS 600D",
         "lens": "24",
-        "frame": "4",
-        "ISO": "100",
+        "fstop": "4",
+        "iso": "100",
         "shutter": "160",
-        "link": "unsplash.com/photos/brooklyn-bridge-puwdjzA1-AQ"
+        "link": "https://unsplash.com/photos/brooklyn-bridge-puwdjzA1-AQ"
     },
     {
         "image": "./assets/img3.jpg",
@@ -30,10 +30,10 @@
         "description": "A big monstera tree photographed from below.",
         "camera": "Canon EOS 6D Mark II",
         "lens": "179",
-        "frame": "5.6",
-        "ISO": "400",
+        "fstop": "5.6",
+        "iso": "400",
         "shutter": "1250",
-        "link": "unsplash.com/photos/the-leaves-of-a-tree-with-a-sky-in-the-background-lQNEEmlkFAw"
+        "link": "https://unsplash.com/photos/the-leaves-of-a-tree-with-a-sky-in-the-background-lQNEEmlkFAw"
     },
     {
         "image": "./assets/img4.jpg",
@@ -42,10 +42,10 @@
         "description": "Wooden tables and chairs outside.",
         "camera": "Sony ILCE-7M3",
         "lens": "61",
-        "frame": "7.1",
-        "ISO": "100",
+        "fstop": "7.1",
+        "iso": "100",
         "shutter": "320",
-        "link": "unsplash.com/photos/a-row-of-wooden-tables-yW6UV9l2hR8"
+        "link": "https://unsplash.com/photos/a-row-of-wooden-tables-yW6UV9l2hR8"
     },
     {
         "image": "./assets/img5.jpg",
@@ -54,9 +54,9 @@
         "description": "A wild white-lipped tree frog sitting on top of a leaf.",
         "camera": "Canon EOS R7",
         "lens": "500",
-        "frame": "6.7",
-        "ISO": "100",
+        "fstop": "6.7",
+        "iso": "100",
         "shutter": "500",
-        "link": "unsplash.com/photos/a-green-frog-sitting-on-top-of-a-leaf-yctzHRij4ZA"
+        "link": "https://unsplash.com/photos/a-green-frog-sitting-on-top-of-a-leaf-yctzHRij4ZA"
     }
 ]
