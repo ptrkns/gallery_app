@@ -1,32 +1,62 @@
 [
     {
-        "id": "1",
-        "image": "./assets/4.jpg",
-        "title": "Edges",
-        "description": "A minimalistic photo of a building."
+        "image": "./assets/img1.jpg",
+        "title": "Frozen Field",
+        "artist": "Anthony Da Cruz",
+        "description": "A snowy sunset in the Alps",
+        "camera": "NIKON D5500",
+        "lens": "50",
+        "frame": "8",
+        "ISO": "640",
+        "shutter": "80",
+        "link": "unsplash.com/photos/landscape-1c33ba-uh_8"
     },
     {
-        "id": "2",
-        "image": "./assets/5.jpg",
-        "title": "Palms in the sunset",
-        "description": "A minimalistic photo of three palms in the nocturnal hours."
+        "image": "./assets/img2.jpg",
+        "title": "Brooklyn Bridge",
+        "artist": "Miltiadis Fragkidis",
+        "description": "The Brooklyn Bridge photographed in the Dumbo district.",
+        "camera": "Canon EOS 600D",
+        "lens": "24",
+        "frame": "4",
+        "ISO": "100",
+        "shutter": "160",
+        "link": "unsplash.com/photos/brooklyn-bridge-puwdjzA1-AQ"
     },
     {
-        "id": "3",
-        "image": "./assets/13.jpg",
-        "title": "Field at night",
-        "description": "An empy field photographed at night."
+        "image": "./assets/img3.jpg",
+        "title": "Monstera Tree",
+        "artist": "Bernd Dittrich",
+        "description": "A big monstera tree photographed from below.",
+        "camera": "Canon EOS 6D Mark II",
+        "lens": "179",
+        "frame": "5.6",
+        "ISO": "400",
+        "shutter": "1250",
+        "link": "unsplash.com/photos/the-leaves-of-a-tree-with-a-sky-in-the-background-lQNEEmlkFAw"
     },
     {
-        "id": "4",
-        "image": "./assets/14.jpg",
-        "title": "Distant mountain",
-        "description": "A distant mountain in the night."
+        "image": "./assets/img4.jpg",
+        "title": "Terrace View",
+        "artist": "Meizhi Lang",
+        "description": "Wooden tables and chairs outside.",
+        "camera": "Sony ILCE-7M3",
+        "lens": "61",
+        "frame": "7.1",
+        "ISO": "100",
+        "shutter": "320",
+        "link": "unsplash.com/photos/a-row-of-wooden-tables-yW6UV9l2hR8"
     },
     {
-        "id": "5",
-        "image": "./assets/16.jpg",
-        "title": "Silhouette of palms",
-        "description": "A photo of palm trees taken either in the afternoon or early in the morning."
+        "image": "./assets/img5.jpg",
+        "title": "Tree Frog",
+        "artist": "David Clode",
+        "description": "A wild white-lipped tree frog sitting on top of a leaf.",
+        "camera": "Canon EOS R7",
+        "lens": "500",
+        "frame": "6.7",
+        "ISO": "100",
+        "shutter": "500",
+        "link": "unsplash.com/photos/a-green-frog-sitting-on-top-of-a-leaf-yctzHRij4ZA"
     }
 ]
