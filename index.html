@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Viewer by Peter Kenesei</title>
+    <title>Gallery App by Peter Kenesei</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <header>
-        <h1>Image viewer</h1>
+        <h1>Gallery App</h1>
     </header>
     <main>
         <section class="image-section">
@@ -30,7 +30,34 @@
         <section class="description-section">
             <div class="description-container">
                 <h2 id="title"></h2>
-                <p id="description">Image description</p>
+                <p id="description"></p>
+                <p id="artist"><i></i></p>
+            </div>
+            <div class="details-container">
+                <h2>Details</h2>
+                <table class="details-table">
+                    <tr>
+                        <td>Camera</td>
+                        <td id="camera"></td>
+                    </tr>
+                    <tr>
+                        <td>Lens</td>
+                        <td id="lens"></td>
+                    </tr>
+                    <tr>
+                        <td>F-stop</td>
+                        <td id="fstop"></td>
+                    </tr>
+                    <tr>
+                        <td>ISO</td>
+                        <td id="iso"></td>
+                    </tr>
+                    <tr>
+                        <td>Shutter speed</td>
+                        <td id="shutter"></td>
+                    </tr>
+                </table>
+                <a id="link" href="#" target="_blank">Check the original post &#10063;</a>
             </div>
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

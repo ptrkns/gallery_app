@@ -73,9 +73,15 @@ footer {
 
 @media(min-width: 376px) {
     section {
-        width: 80%;
+        width: 55%;
         margin: 0;
         padding: 0;
+    }
+
+    .description-section {
+        min-height: 20vh;
+        margin: auto;
+        padding: 2vh 0vh;
     }
 }
 
@@ -96,24 +102,10 @@ footer {
     border-bottom: 1px solid lightgray;
 }
 
-.description-section {
-    margin: auto;
-}
-
 /* Image section */
 
-@media(max-width: 375px) {
-    .main-image {
-        width: 100%;
-        transition: 350ms;
-    }
-}
-
-@media(min-width: 376px) {
-    .main-image {
-        width: 70%;
-        transition: 350ms;
-    }
+.main-image {
+    width: 100%;
 }
 
 /* Thumbnails */
@@ -149,7 +141,7 @@ footer {
 
 .thumbnail-image:hover {
     cursor: pointer;
-    border-color: var(--highlight-color);
+    border-color: var(--primary-text-color);
     transition: 350ms;
 }
 
@@ -193,11 +185,54 @@ h2 {
     margin: 1vh 0vh;
 }
 
+#artist {
+    margin: 1vh 0vh;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+/* Details */
+
+.details-container h2 {
+    margin: 2vh 0vh;
+}
+
+.details-container a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media(max-width: 375px) {
+    .details-table {
+        margin-bottom: 2vh;
+        width: 100%;
+        color: var(--primary-text-color);
+        border-collapse: collapse;
+    }
+}
+
+@media(min-width: 376px) {
+    .details-table {
+        margin: auto;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        width: 100%;
+        color: var(--primary-text-color);
+        border-collapse: collapse;
+    }
+}
+
+.details-table td {
+    padding: 5px 10px;
+    border-bottom: 2px solid white;
+    background-color: var(--background-color);
+}
+
 /* Varriables */
 
 :root {
     --primary-text-color: #323B4C;
     --secondary-text-color: #545454;
-    --highlight-color: #FFAE35;
     --background-color: #E6F2FD;
 }

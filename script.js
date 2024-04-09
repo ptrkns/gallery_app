@@ -7,6 +7,13 @@ function loadMainPicture(index) {
     $('#main-image').attr('src', imageArray[index].image);
     $('#title').text(imageArray[index].title);
     $('#description').text(imageArray[index].description);
+    $('#artist').text("Taken by " + imageArray[index].artist);
+    $('#camera').text(imageArray[index].camera);
+    $('#lens').text(imageArray[index].lens + " mm");
+    $('#fstop').text("f/" + imageArray[index].fstop);
+    $('#iso').text(imageArray[index].iso);
+    $('#shutter').text("1/" + imageArray[index].shutter + " s");
+    $('#link').attr('href', imageArray[index].link);
     updateThumbnails(index);
 };
 
@@ -63,6 +70,13 @@ function setArrowClick(name) {
                 $('#main-image').attr('src', imageArray[currentPicture].image);
                 $('#title').text(imageArray[currentPicture].title);
                 $('#description').text(imageArray[currentPicture].description);
+                $('#artist').text("Taken by " + imageArray[currentPicture].artist);
+                $('#camera').text(imageArray[currentPicture].camera);
+                $('#lens').text(imageArray[currentPicture].lens + " mm");
+                $('#fstop').text("f/" + imageArray[currentPicture].fstop);
+                $('#iso').text(imageArray[currentPicture].iso);
+                $('#shutter').text("1/" + imageArray[currentPicture].shutter + " s");
+                $('#link').attr('href', imageArray[currentPicture].link);
                 updateThumbnails(currentPicture);
             }
         }
