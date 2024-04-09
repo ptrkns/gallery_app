@@ -13,28 +13,25 @@
         <h1>Image viewer</h1>
     </header>
     <main>
-        <section class="upper-section">
-            <p>This web app uses HTML, CSS, and JavaScript.</p>
+        <section class="image-section">
+            <img class="main-image" id="main-image">
         </section>
-        <section class="middle-section">
+        <section class="thumbnail-section">
             <div class="image-container">
                 <div class="button-container">
                     <button class="arrow-left" id="al">&#129120;</button>
-                    <img class="main-image" id="main-image">
+                    <img class="thumbnail-image" id="th-image-1">
+                    <img class="thumbnail-image" id="th-image-2">
+                    <img class="thumbnail-image" id="th-image-3">
                     <button class="arrow-right" id="ar">&#129122;</button>
                 </div>
             </div>
+        </section>
+        <section class="description-section">
             <div class="description-container">
                 <h2 id="title"></h2>
                 <p id="description">Image description</p>
             </div>
-        </section>
-        <section class="lower-section">
-            <img class="thumbnail-image" id="th-image-1">
-            <img class="thumbnail-image" id="th-image-2">
-            <img class="thumbnail-image" id="th-image-3">
-            <img class="thumbnail-image" id="th-image-4">
-            <img class="thumbnail-image" id="th-image-5">
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="script.js"></script>
